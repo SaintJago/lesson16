@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+
+body {
+  /* Значення за замовченням */
+  font-family: "Lato";
+  color: #424551;
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper > main {
+  flex-grow: 1;
+}
+[class*="__container"] {
+  max-width: 1285px;
+  margin: 0 auto;
+}
+.page {
+  padding: 50px 20px;
+}
+
+/* ======================Основний блок====================== */
+.forma-block {
+  margin-bottom: 100px;
+}
+/* ======================Основний блок form====================== */
+.forma-block__form {
+  display: flex;
+  gap: 105px;
+}
+/* ======================Ліва частина (image)=============== */
+
+.forma-block__img {
+  flex: 0 1 35%;
+  align-self: center;
+  padding: 45px 0;
+}
+
+/* ======================Права частина (forma content)====================== */
+/* ======Блок title=========== */
+.forma-block__content {
+  flex: 1 1 auto;
+}
+.forma-block__title {
+  color: #1e212c;
+  margin-bottom: 40px;
+}
+.forma-block__text {
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.forma-block__caption {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+}
+/* ======Блок з основними запитаннями (2 коробочки)======= */
+.forma-block__list {
+  display: flex;
+}
+
+/* ======1 box з основними запитаннями (Ліва частина)======= */
+.forma-block__item--left {
+  flex: 0 1 auto;
+}
+/* ======2 box з основними запитаннями (Права частина)======= */
+
+.forma-block__item--right {
+  flex: 0 1 auto;
+}
+
+.form__label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.form__input {
+  border: 1px solid #d7dadd;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  padding: 0px 16px;
+  width: 330px;
+  height: 52px;
+  color: #7a956b;
+}
+/* ======Блок з полем текстового вводу (message)======= */
+
+.forma-block__message {
+  margin-bottom: 40px;
+}
+
+.form__textarea {
+  width: 705px;
+  height: 128px;
+  display: block;
+  resize: none;
+  border: 1px solid #d7dadd;
+  border-radius: 4px;
+}
+/* ======Блок з активними кнопками (2 коробочки)======= */
+
+.forma-block__action {
+  display: flex;
+  gap: 50px;
+}
+/* ======Чекбокс (1 коробочка)======= */
+/* Кастомний чекбокс */
+.checkbox {
+  position: relative;
+  flex: 0 1 42.5%;
+}
+.checkbox__input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+/* Стан "вибраний" */
+.checkbox__input:checked + .checkbox__label::before {
+  background: #ff3f3a url("../img/check.svg") center / 70% no-repeat;
+}
+.checkbox__label {
+  cursor: pointer;
+  display: inline-flex;
+  /* align-items: center; */
+  gap: 10px;
+}
+.checkbox__label::before {
+  content: "";
+  flex: 0 0 16px;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  border: 1px solid #d7dadd;
+}
+.checkbox__text {
+  align-self: center;
+}
+/* ======Кнопка відправки даних (2 коробочка)======= */
+
+.forma-block__button {
+  width: 340px;
+}
+.form__input--text {
+  font-size: 25px;
+  font-weight: 900;
+  padding: 10px 30px;
+}
+.radio-block {
+  display: inline-flex;
+  flex-direction: column;
+}
+.radio-input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.radio-label {
+  padding: 20px 30px;
+  cursor: pointer;
+  flex: 0 1 auto;
+  gap: 10px;
+}
+.radio-label::before {
+  content: "";
+  flex: 0 0 17px;
+  display: inline-flex;
+  margin-right: 15px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 1px solid #0d7cec;
+}
+.radio-input:checked + .radio-label::before {
+  background: #1025e2 url("../img/check.svg") center / 70% no-repeat;
+}
+.radio-block__button {
+  padding: 16px 150px;
+}

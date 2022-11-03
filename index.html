@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Lesson 16</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header"></header>
+      <main class="page">
+        <div class="main__container">
+          <div class="forma-block">
+            <form
+              class="forma-block__form"
+              action="https://jsonplaceholder.typicode.com/posts"
+              method="POST"
+            >
+              <div class="forma-block__img">
+                <img
+                  src="img/illustration.svg"
+                  alt="illustration"
+                  class="image"
+                />
+              </div>
+              <div class="forma-block__content">
+                <div class="forma-block__title">
+                  <div class="forma-block__text">Any questions?</div>
+                  <h1 class="forma-block__caption">Drop us a line</h1>
+                </div>
+                <div class="forma-block__list">
+                  <div class="forma-block__item forma-block__item--left">
+                    <div class="form__line">
+                      <label for="first-name" class="form__label"
+                        >First Name*</label
+                      >
+                      <input
+                        id="first-name"
+                        required
+                        autocomplete="off"
+                        type="text"
+                        name="first-name"
+                        placeholder="Your first name"
+                        class="form__input"
+                      />
+                    </div>
+                    <div class="form__line">
+                      <label for="email" class="form__label">Email*</label>
+                      <input
+                        id="email"
+                        required
+                        autocomplete="off"
+                        type="email"
+                        name="email"
+                        placeholder="Your working email"
+                        class="form__input"
+                      />
+                    </div>
+                  </div>
+                  <div class="forma-block__item forma-block__item--right">
+                    <div class="form__line">
+                      <label for="last-name" class="form__label"
+                        >Last Name*</label
+                      >
+                      <input
+                        id="last-name"
+                        required
+                        autocomplete="off"
+                        type="text"
+                        name="last-name"
+                        placeholder="Your last name"
+                        class="form__input"
+                      />
+                    </div>
+                    <div class="form__line">
+                      <label for="phone" class="form__label">Phone</label>
+                      <input
+                        id="phone"
+                        required
+                        autocomplete="off"
+                        type="tel"
+                        name="phone"
+                        placeholder="Your phone number"
+                        class="form__input"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="forma-block__message">
+                  <label for="message" class="form__label">Message*</label>
+                  <textarea
+                    class="form__textarea"
+                    name="message"
+                    id="message"
+                    placeholder="Your message"
+                  ></textarea>
+                </div>
+                <div class="forma-block__action">
+                  <div class="checkbox">
+                    <input
+                      id="communications"
+                      autocomplete="off"
+                      type="checkbox"
+                      value="yes"
+                      name="communications"
+                      class="checkbox__input"
+                    />
+                    <label for="communications" class="checkbox__label"
+                      ><span class="checkbox__text"
+                        >I agree to receive communications from Createx Online
+                        School</span
+                      ></label
+                    >
+                  </div>
+                  <button type="submit" class="forma-block__button button">
+                    Send message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="radio-block__container">
+          <form
+            class="radio-block__form"
+            action="https://jsonplaceholder.typicode.com/posts"
+            method="POST"
+          >
+            <div class="form-input--radio">
+              <div class="form__input--text">Улюблене пиво</div>
+              <div class="radio-block">
+                <input
+                  checked
+                  class="radio-input form__input--radio"
+                  id="beer-01"
+                  required
+                  autocomplete="off"
+                  value="light"
+                  name="beer"
+                  type="radio"
+                />
+                <label class="radio-label" for="beer-01">Світле</label>
+                <input
+                  checked
+                  class="radio-input form__input--radio"
+                  id="beer-02"
+                  required
+                  autocomplete="off"
+                  value="dark"
+                  name="beer"
+                  type="radio"
+                />
+                <label class="radio-label" for="beer-02">Темне</label>
+                <input
+                  checked
+                  class="radio-input form__input--radio"
+                  id="beer-03"
+                  required
+                  autocomplete="off"
+                  value="unfiltered"
+                  name="beer"
+                  type="radio"
+                />
+                <label class="radio-label" for="beer-03">Нефільтроване</label>
+              </div>
+            </div>
+            <button type="submit" class="radio-block__button button">
+              Submit
+            </button>
+          </form>
+        </div>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+  </body>
+</html>
